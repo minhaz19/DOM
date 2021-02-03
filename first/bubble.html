@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="start">
+        <h2>list Item</h2>
+        <ul id="unorderd-list">
+            <li id="first" class="list-item">Lorem, ipsum dolor.</li>
+            <li class="list-item">Magnam, laboriosam accusamus.</li>
+            <li class="list-item">Eum, rem maiores?</li>
+            <li class="list-item">Id, consectetur vero.</li>
+            <li class="list-item">Ratione, magnam debitis!</li>
+        </ul>
+        <button id="addElement">Add new Item</button>
+    </section>
+
+    <script>
+        // var items = document.getElementsByClassName('list-item');
+        // for (let i = 0; i < items.length; i++) {
+        //     const item = items[i];
+        //     item.addEventListener('click',function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })  
+        // }
+         document.getElementById('addElement').addEventListener('click',function(event){
+            var itemParent = document.getElementById("unorderd-list");
+            var newItem = document.createElement('li');
+            newItem.innerText = 'added new item';
+            itemParent.appendChild(newItem);
+        })
+        // var result = document.getElementById('first').addEventListener('click',function(event){
+        //     console.log('first Item clicked .')
+        // })
+        document.getElementById('unorderd-list').addEventListener('click',function(event){
+            //  console.log('unorder Item clicked .')
+            event.target.parentNode.removeChild(event.target);
+         })
+        // var result = document.getElementById('start').addEventListener('click',function(event){
+        //     console.log('section Item clicked .')
+
+        // })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        .special h3{
+        
+    }
+   </style>
+</head>
+<body>
+    <h1>hello javascript</h1>
+    <section>
+        <h3 class="author">author-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet earum ipsum minus maiores ipsam, architecto velit quidem fugit impedit? Earum molestias illum culpa ex fuga veniam, autem quasi dolorum?</p>
+        
+        <h3 class="author">author-2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet earum ipsum minus maiores ipsam, architecto velit quidem fugit impedit? Earum molestias illum culpa ex fuga veniam, autem quasi dolorum?</p>
+        <h3 id="bestSeller" class="author" title="best seller">author3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet earum ipsum minus maiores ipsam, architecto velit quidem fugit impedit? Earum molestias illum culpa ex fuga veniam, autem quasi dolorum?</p>
+        <h3 class="author">author-4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet earum ipsum minus maiores ipsam, architecto velit quidem fugit impedit? Earum molestias illum culpa ex fuga veniam, autem quasi dolorum?</p>
+        <h3 class="author">author5</h3>
+        <article>
+        <p id="loem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet earum ipsum minus maiores ipsam, architecto velit quidem fugit impedit? Earum molestias illum culpa ex fuga veniam, autem quasi dolorum?</p>
+    </article>
+    </section>
+    <article >
+        <h3>singer-1</h3>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+    </article>
+    <article class="special">
+        <h3>singer-2</h3>
+        <p class="description">Ab adipisci a repellendus inventore quibusdam? Eveniet, reiciendis? Autem, perspiciatis.</p>
+    </article>
+    <article class="special">
+        <h3>singer-3</h3>
+        <p class="description">Dignissimos vero iusto omnis soluta. Ex modi alias corrupti laboriosam!</p>
+    </article>
+
+    <script>
+        // // alert('hello World');
+        // console.log("description");
+        // var name ={name:'Minhaz', ID:'C181027'};
+        // console.log('name');
+        // document.getElementById('loem');
+        // loem.style.color = 'green';
+        // var author = document.querySelectorAll('.special h3');
+        // for(var i=0;i<author.length;i++){
+        //     var elements = author[i];
+        //     // console.log(elements.innerHTML);
+        //     elements.innerHTML = 'lorem10 '+ i;
+        //     elements.style.color= 'green';
+        //     elements.style.backgroundColor = 'red';
+
+        // }
+        var article = document.getElementById('loem');
+        var last = document.createElement('p');
+        last.innerHTML = 'this tag is used by js .'
+        article.appendChild(last);
+
+    </script>
+    <script src="first.js"></script>
+</body>
+</html>
